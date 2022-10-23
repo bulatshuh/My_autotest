@@ -6,6 +6,7 @@ class BasePageLocators:
     EXPLORE_BUTTON = (By.CSS_SELECTOR, '[aria-label="Explore"]')
     SEARCH_FIELD = (By.CSS_SELECTOR, '#search-input #search')
     SEARCH_BUTTON = (By.CSS_SELECTOR, '#search-icon-legacy.style-scope')
+    BODY = (By.TAG_NAME, 'body')
 
 
 class LoginPageLocators:

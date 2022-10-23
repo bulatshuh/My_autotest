@@ -2,6 +2,7 @@ import pytest
 from .pages.base_page import BasePage
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
+import time
 
 
 @pytest.mark.new

@@ -3,6 +3,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.common.exceptions import TimeoutException
 from .locators import BasePageLocators
+from selenium.webdriver.common.keys import Keys
 
 
 class BasePage:
@@ -41,6 +42,15 @@ class BasePage:
 
     def scroll_down(self):
         self.browser.execute_script("window.scrollTo(0,document.body.scrollHeight)")
+
+    def switch_to_first_tab(self):
+        self.browser.switch_to.window(self.browser.window_handles[0])
+
+    def open_new_tab(self):
+        self.browser.execute_script("window.open('');")
+
+    def close_current_tab(self):
+        self.browser.close()
 
     def quit(self):
         self.browser.quit()
