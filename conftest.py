@@ -1,6 +1,7 @@
 import pytest
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
+from fake_useragent import UserAgent
 
 
 def pytest_addoption(parser):
@@ -10,14 +11,19 @@ def pytest_addoption(parser):
 
 @pytest.fixture(scope='function')
 def browser(request):
+    user_agent = UserAgent()
     browser_name = request.config.getoption('browser')
     browser = None
     if browser_name == 'chrome':
         print('\nOpening Chrome browser...')
-        browser = webdriver.Chrome()
+        options = Options()
+        options.add_argument(f'user-agent={user_agent.random}')
+        browser = webdriver.Chrome(options=options)
     elif browser_name == 'firefox':
         print('\nOpening Firefox browser...')
-        browser = webdriver.Firefox()
+        options = webdriver.FirefoxOptions()
+        options.set_preference('general.useragent.override', user_agent.random)
+        browser = webdriver.Firefox(options=options)
     else:
         raise pytest.UsageError('--browser should be chrome or firefox')
     yield browser

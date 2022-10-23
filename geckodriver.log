@@ -15,3 +15,26 @@ console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message f
 console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://accounts.google.com"
 console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://accounts.google.com"
 1666159051085	Marionette	INFO	Stopped listening on port 62344
+1666508443799	geckodriver	INFO	Listening on 127.0.0.1:64982
+1666508444297	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "64983" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\KHISAM~1\\AppData\\Local\\Temp\\rust_mozprofileEfQpZm"
+1666508446483	Marionette	INFO	Marionette enabled
+1666508446498	Marionette	INFO	Listening on port 64990
+WebDriver BiDi listening on ws://localhost:64983
+Read port: 64990
+1666508446874	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\KHISAM~1\\AppData\\Local\\Temp\\rust_mozprofileEfQpZm\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:64983/devtools/browser/1a300b6d-57e9-4e9c-bc0f-cb397051f8b5
+JavaScript warning: https://pagead2.googlesyndication.com/bg/uorw1Q15Z41enm5ok1wjUR_2roEciA9rCBWFXmlrAj4.js line 2 > eval line 6785 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1666508461589	Marionette	INFO	Stopped listening on port 64990
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 1105: Error: Sqlite.jsm has been shutdown. Cannot open connection to: C:\Users\KHISAM~1\AppData\Local\Temp\rust_mozprofileEfQpZm\protections.sqlite
+1666508486060	geckodriver	INFO	Listening on 127.0.0.1:65175
+1666508486574	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "65176" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\KHISAM~1\\AppData\\Local\\Temp\\rust_mozprofilef7NBYW"
+1666508487721	Marionette	INFO	Marionette enabled
+1666508487735	Marionette	INFO	Listening on port 65183
+WebDriver BiDi listening on ws://localhost:65176
+Read port: 65183
+1666508488107	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\KHISAM~1\\AppData\\Local\\Temp\\rust_mozprofilef7NBYW\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:65176/devtools/browser/44de122a-d465-4aa4-81ad-724a41647318
+1666508500297	Marionette	INFO	Stopped listening on port 65183
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 1105: Error: Sqlite.jsm has been shutdown. Cannot open connection to: C:\Users\KHISAM~1\AppData\Local\Temp\rust_mozprofilef7NBYW\protections.sqlite
