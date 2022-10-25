@@ -10,3 +10,7 @@ class SearchPage(BasePage):
         search_button = self.browser.find_element(*BasePageLocators.SEARCH_BUTTON)
         search_button.click()
         assert self.browser.find_element(*SearchPageLocators.SEARCH_RESULTS), 'Search results not presented'
+
+    def open_channel(self):
+        channel_link = self.browser.find_element(*SearchPageLocators.CHANNEL_LINK)
+        channel_link.click()

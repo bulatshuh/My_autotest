@@ -16,9 +16,9 @@ def browser(request):
     browser = None
     if browser_name == 'chrome':
         print('\nOpening Chrome browser...')
-        options = Options()
-        options.add_argument(f'user-agent={user_agent.random}')
-        browser = webdriver.Chrome(options=options)
+        # options = Options()
+        # options.add_argument(f'user-agent={user_agent.random}')
+        browser = webdriver.Chrome()
     elif browser_name == 'firefox':
         print('\nOpening Firefox browser...')
         options = webdriver.FirefoxOptions()

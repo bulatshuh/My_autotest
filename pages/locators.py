@@ -22,3 +22,4 @@ class ExplorePageLocators:
 
 class SearchPageLocators:
     SEARCH_RESULTS = (By.CSS_SELECTOR, '#container .style-scope.ytd-search')
+    CHANNEL_LINK = (By.CSS_SELECTOR, '#info-section #main-link #info #channel-title')
