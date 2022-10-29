@@ -40,6 +40,10 @@ class BasePage:
         explore_button = self.browser.find_element(*BasePageLocators.EXPLORE_BUTTON)
         explore_button.click()
 
+    def go_to_shorts_page(self):
+        shorts_button = self.browser.find_element(*BasePageLocators.SHORTS_BUTTON)
+        shorts_button.click()
+
     def scroll_down(self):
         self.browser.execute_script("window.scrollTo(0,document.body.scrollHeight)")
 
