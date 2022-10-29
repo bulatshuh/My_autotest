@@ -7,6 +7,7 @@ class BasePageLocators:
     SEARCH_FIELD = (By.CSS_SELECTOR, '#search-input #search')
     SEARCH_BUTTON = (By.CSS_SELECTOR, '#search-icon-legacy.style-scope')
     BODY = (By.TAG_NAME, 'body')
+    SHORTS_BUTTON = (By.CSS_SELECTOR, '#items .style-scope.ytd-mini-guide-renderer:nth-child(2)')
 
 
 class LoginPageLocators:
@@ -23,3 +24,8 @@ class ExplorePageLocators:
 class SearchPageLocators:
     SEARCH_RESULTS = (By.CSS_SELECTOR, '#container .style-scope.ytd-search')
     CHANNEL_LINK = (By.CSS_SELECTOR, '#info-section #main-link #info #channel-title')
+
+
+class ShortsPageLocators:
+    REEL_VIDEO_CONTAINER = (By.CSS_SELECTOR, '#shorts-container #shorts-inner-container'
+                                             ' .reel-video-in-sequence:nth-child(2)')
