@@ -29,3 +29,7 @@ class SearchPageLocators:
 class ShortsPageLocators:
     REEL_VIDEO_CONTAINER = (By.CSS_SELECTOR, '#shorts-container #shorts-inner-container'
                                              ' .reel-video-in-sequence:nth-child(2)')
+    NEXT_REEL_BUTTON = (By.CSS_SELECTOR, '.navigation-button.style-scope.ytd-shorts:nth-child(4) '
+                                         '.style-scope.ytd-shorts')
+    PREVIOUS_REEL_BUTTON = (By.CSS_SELECTOR, '.navigation-button.style-scope.ytd-shorts:nth-child(1) '
+                                            '.style-scope.ytd-shorts')
