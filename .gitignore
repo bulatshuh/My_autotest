@@ -1,3 +1,4 @@
 .pytest_cache/
 venv_My_test/
 geckodriver.log
+.idea/
