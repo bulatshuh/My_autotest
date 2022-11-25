@@ -1,0 +1,5 @@
+venv_My_test/
+/__pycache__
+.pytest_cache/
+geckodriver.log
+.idea/
