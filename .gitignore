@@ -4,3 +4,5 @@ geckodriver.log
 .idea/
 __pycache__/
 pages/__pycache__/
+venv/
+tmp/

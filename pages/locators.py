@@ -8,6 +8,7 @@ class BasePageLocators:
     SEARCH_BUTTON = (By.CSS_SELECTOR, '#search-icon-legacy.style-scope')
     BODY = (By.TAG_NAME, 'body')
     SHORTS_BUTTON = (By.CSS_SELECTOR, '#items .style-scope.ytd-mini-guide-renderer:nth-child(2)')
+    HTML = (By.TAG_NAME, 'html')
 
 
 class LoginPageLocators:

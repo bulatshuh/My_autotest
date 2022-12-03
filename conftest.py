@@ -23,3 +23,12 @@ def browser(request):
     yield browser
     print('\nQuitting browser...')
     browser.quit()
+
+
+@pytest.fixture(scope="function")
+def headless_option_browser():
+    options = webdriver.ChromeOptions()
+    options.headless = True
+    browser = webdriver.Chrome(options=options)
+    yield browser
+    browser.quit()

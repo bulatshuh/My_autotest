@@ -56,5 +56,22 @@ class BasePage:
     def close_current_tab(self):
         self.browser.close()
 
+    def scroll_down_slowly_and_scrape(self, path_for_screenshot):
+        original_size = self.browser.get_window_size()
+        required_width = self.browser.execute_script('return document.body.parentNode.scrollWidth')
+        required_height = self.browser.execute_script('return document.body.parentNode.scrollHeight')
+
+        html = self.browser.find_element(*BasePageLocators.HTML)
+
+        while original_size['height'] < required_height:
+            html.send_keys(Keys.PAGE_DOWN)
+            original_size['height'] += original_size['height']
+
+        html.send_keys(Keys.HOME)
+        self.browser.set_window_size(required_width, required_height)
+
+        self.browser.save_screenshot(path_for_screenshot)
+        self.browser.set_window_size(original_size['width'], original_size['height'])
+
     def quit(self):
         self.browser.quit()
